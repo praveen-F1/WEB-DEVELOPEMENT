@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphism LogIn Form</title>
+
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Kumbh Sans', sans-serif;
+        }
+                        
+        body {
+            width:100%;
+            height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:#f0f0f3;
+        }
+                        
+        .container {
+            width:320px;
+            height:450px;
+            display:flex;
+            align-items:center;
+            justify-content:space-around;
+            flex-direction:column;
+            border-radius:20px;
+            background:rgba(255,255,255,0.2);
+            box-shadow:-5px -3px 7px #fff,
+                5px 3px 5px rgba(94,104,121,0.288);
+        }
+
+        span {
+            font-family: 'Poppins',sans-serif;
+            color: #000;
+            text-shadow: 
+            2px 2px 5px #8e2de2;
+            outline: none;
+            font-weight:900;
+            font-size:20px;
+            letter-spacing:5px;
+            color: #8E2DE2;
+            color: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+            color: linear-gradient(to right, #4A00E0, #8E2DE2);
+
+        }                 
+
+        .box {
+            width:90%;
+            height:200px;
+            margin:0 15px;
+            display:flex;
+            border-radius:20px;
+            justify-content:space-around;
+            flex-direction:column;
+            border-radius:20px;
+            background:rgba(255,255,255,0.2);
+            box-shadow:-5px -3px 7px #fff,
+                5px 3px 5px rgba(94,104,121,0.288);
+        }
+
+        .box input[type="email"], .box input[type="password"] {
+            width:100%;
+            height:30px;
+            outline:none;
+            padding:20px;
+            background:transparent;
+            border-top:none;
+            border-left:none;
+            border-right:none; border-image:-webkit-linear-gradient(50deg,#e100ff,#7f00ff);
+            border-image-slice:1;
+            font-weight:900;
+        }
+
+        #forgotp {
+            font-size:14px;
+            font-weight:400;
+            color:grey;
+            padding:0 20px;
+        }
+
+        .btnarea {
+            width:90%;
+            height:45px;
+            border-radius:30px;
+            display:flex;
+            justify-content:space-between;
+            box-shadow:-5px -3px 7px #fff,
+                5px 3px 5px rgba(94,104,121,0.288);
+        }
+
+        .btnarea p {
+            width:60%;
+            font-size:14px;
+            text-align:center;
+            line-height:35px;
+            border-radius:30px;
+            font-weight:600;
+            color:grey;
+        }
+                        
+        .btnarea a {
+            width:40%;
+            height:auto;
+            color:#fff;
+            text-align:center;
+            line-height:35px;
+            text-decoration:none;
+            border-radius:30px;
+            font-size:15px;
+            background: #7F00FF;
+            background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+        background: linear-gradient(to right, #E100FF, #7F00FF);
+        cursor:pointer;
+        }
+                        
+        .btnarea a:hover, a:active {
+            transform:scale(1.11);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span>SIGN IN</span>
+        <div class="box">
+          <input type="email" id="email" placeholder="Email Id">
+          <input type="password" id="pass" placeholder="Password">
+          <p id="forgotp">Forget Password?</p>
+        </div>
+        <div class="btnarea">
+          <p>Click To Sign Up</p>
+          <a href="#">Sign In</a>
+        </div>
+      </div>
+</body>
+</html>
